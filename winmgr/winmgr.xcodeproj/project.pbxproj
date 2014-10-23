@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1176157A19F96132006C5DEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1176157919F96132006C5DEB /* AppDelegate.m */; };
+		1176157C19F96132006C5DEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1176157B19F96132006C5DEB /* main.m */; };
+		1176157E19F96132006C5DEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1176157D19F96132006C5DEB /* Images.xcassets */; };
+		1176158119F96132006C5DEB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1176157F19F96132006C5DEB /* MainMenu.xib */; };
+		1176158D19F96132006C5DEB /* winmgrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1176158C19F96132006C5DEB /* winmgrTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1176158719F96132006C5DEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1176156B19F96132006C5DEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1176157219F96132006C5DEB;
+			remoteInfo = winmgr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1176157319F96132006C5DEB /* winmgr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winmgr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1176157719F96132006C5DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1176157819F96132006C5DEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1176157919F96132006C5DEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1176157B19F96132006C5DEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1176157D19F96132006C5DEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1176158019F96132006C5DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1176158619F96132006C5DEB /* winmgrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = winmgrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1176158B19F96132006C5DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1176158C19F96132006C5DEB /* winmgrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = winmgrTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1176157019F96132006C5DEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1176158319F96132006C5DEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1176156A19F96132006C5DEB = {
+			isa = PBXGroup;
+			children = (
+				1176157519F96132006C5DEB /* winmgr */,
+				1176158919F96132006C5DEB /* winmgrTests */,
+				1176157419F96132006C5DEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1176157419F96132006C5DEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1176157319F96132006C5DEB /* winmgr.app */,
+				1176158619F96132006C5DEB /* winmgrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1176157519F96132006C5DEB /* winmgr */ = {
+			isa = PBXGroup;
+			children = (
+				1176157819F96132006C5DEB /* AppDelegate.h */,
+				1176157919F96132006C5DEB /* AppDelegate.m */,
+				1176157D19F96132006C5DEB /* Images.xcassets */,
+				1176157F19F96132006C5DEB /* MainMenu.xib */,
+				1176157619F96132006C5DEB /* Supporting Files */,
+			);
+			path = winmgr;
+			sourceTree = "<group>";
+		};
+		1176157619F96132006C5DEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1176157719F96132006C5DEB /* Info.plist */,
+				1176157B19F96132006C5DEB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1176158919F96132006C5DEB /* winmgrTests */ = {
+			isa = PBXGroup;
+			children = (
+				1176158C19F96132006C5DEB /* winmgrTests.m */,
+				1176158A19F96132006C5DEB /* Supporting Files */,
+			);
+			path = winmgrTests;
+			sourceTree = "<group>";
+		};
+		1176158A19F96132006C5DEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1176158B19F96132006C5DEB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1176157219F96132006C5DEB /* winmgr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1176159019F96132006C5DEB /* Build configuration list for PBXNativeTarget "winmgr" */;
+			buildPhases = (
+				1176156F19F96132006C5DEB /* Sources */,
+				1176157019F96132006C5DEB /* Frameworks */,
+				1176157119F96132006C5DEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = winmgr;
+			productName = winmgr;
+			productReference = 1176157319F96132006C5DEB /* winmgr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1176158519F96132006C5DEB /* winmgrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1176159319F96132006C5DEB /* Build configuration list for PBXNativeTarget "winmgrTests" */;
+			buildPhases = (
+				1176158219F96132006C5DEB /* Sources */,
+				1176158319F96132006C5DEB /* Frameworks */,
+				1176158419F96132006C5DEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1176158819F96132006C5DEB /* PBXTargetDependency */,
+			);
+			name = winmgrTests;
+			productName = winmgrTests;
+			productReference = 1176158619F96132006C5DEB /* winmgrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1176156B19F96132006C5DEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = revin;
+				TargetAttributes = {
+					1176157219F96132006C5DEB = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					1176158519F96132006C5DEB = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 1176157219F96132006C5DEB;
+					};
+				};
+			};
+			buildConfigurationList = 1176156E19F96132006C5DEB /* Build configuration list for PBXProject "winmgr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1176156A19F96132006C5DEB;
+			productRefGroup = 1176157419F96132006C5DEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1176157219F96132006C5DEB /* winmgr */,
+				1176158519F96132006C5DEB /* winmgrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1176157119F96132006C5DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1176157E19F96132006C5DEB /* Images.xcassets in Resources */,
+				1176158119F96132006C5DEB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1176158419F96132006C5DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1176156F19F96132006C5DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1176157C19F96132006C5DEB /* main.m in Sources */,
+				1176157A19F96132006C5DEB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1176158219F96132006C5DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1176158D19F96132006C5DEB /* winmgrTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1176158819F96132006C5DEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1176157219F96132006C5DEB /* winmgr */;
+			targetProxy = 1176158719F96132006C5DEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1176157F19F96132006C5DEB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1176158019F96132006C5DEB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1176158E19F96132006C5DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1176158F19F96132006C5DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1176159119F96132006C5DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = winmgr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1176159219F96132006C5DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = winmgr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1176159419F96132006C5DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = winmgrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/winmgr.app/Contents/MacOS/winmgr";
+			};
+			name = Debug;
+		};
+		1176159519F96132006C5DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = winmgrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/winmgr.app/Contents/MacOS/winmgr";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1176156E19F96132006C5DEB /* Build configuration list for PBXProject "winmgr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1176158E19F96132006C5DEB /* Debug */,
+				1176158F19F96132006C5DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1176159019F96132006C5DEB /* Build configuration list for PBXNativeTarget "winmgr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1176159119F96132006C5DEB /* Debug */,
+				1176159219F96132006C5DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1176159319F96132006C5DEB /* Build configuration list for PBXNativeTarget "winmgrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1176159419F96132006C5DEB /* Debug */,
+				1176159519F96132006C5DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1176156B19F96132006C5DEB /* Project object */;
+}
