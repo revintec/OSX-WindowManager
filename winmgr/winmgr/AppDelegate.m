@@ -17,6 +17,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    NSAlert*a=[NSAlert alertWithMessageText:@"XXX" defaultButton:@"default" alternateButton:@"alternate" otherButton:@"other" informativeTextWithFormat:@"aaaa%@",@"bbbb"];
     [a runModal];
 }
 
