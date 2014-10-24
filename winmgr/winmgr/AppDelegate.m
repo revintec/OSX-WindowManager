@@ -9,20 +9,50 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
-@property (weak) IBOutlet NSWindow *window;
+@property CFMachPortRef eventTap;
+@property NSTextField*output;
+@property NSString*string;
+@property(weak)IBOutlet NSWindow * window;
 @end
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
-    NSAlert*a=[NSAlert alertWithMessageText:@"XXX" defaultButton:@"default" alternateButton:@"alternate" otherButton:@"other" informativeTextWithFormat:@"aaaa%@",@"bbbb"];
-    [a runModal];
+-(void)debugOutput:(NSString*)string{
+    self.string=[self.string stringByAppendingString:string];
+    [self.output setStringValue:self.string];
+}
+-(BOOL)requestAccessibility{
+    NSDictionary *options = @{(__bridge id)kAXTrustedCheckOptionPrompt: @YES};
+    BOOL accessibilityEnabled = AXIsProcessTrustedWithOptions((__bridge CFDictionaryRef)options);
+    return accessibilityEnabled;
 }
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
+-(void)applicationDidFinishLaunching:(NSNotification *)notification{
+    NSView *contentView = [self.window contentView];
+    self.output=[contentView viewWithTag:100];
+    self.string=@"";
+    
+    BOOL ac=[self requestAccessibility];
+    [self debugOutput:ac?@"YES\n":@"NO\n"];
+    
+    [self startEventTap];
+
+}
+
+-(void)startEventTap{
+    //eventTap is an ivar on this class of type CFMachPortRef
+    self.eventTap=CGEventTapCreate(kCGSessionEventTap,kCGHeadInsertEventTap,kCGEventTapOptionListenOnly,kCGEventMaskForAllEvents,myCGEventCallback,NULL);
+    NSLog(@"%@",self.eventTap);
+    CGEventTapEnable(self.eventTap,true);
+    NSLog(@"setup completed");
+}
+
+CGEventRef myCGEventCallback(CGEventTapProxy proxy,CGEventType type,CGEventRef event,void *refcon){
+    NSLog(@"%@",NSStringFromPoint([NSEvent mouseLocation]));
+    return event;
+}
+
+-(void)applicationWillTerminate:(NSNotification *)aNotification{
     // Insert code here to tear down your application
 }
-
 @end
