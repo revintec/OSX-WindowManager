@@ -41,14 +41,14 @@
 
 -(void)startEventTap{
     //eventTap is an ivar on this class of type CFMachPortRef
-    self.eventTap=CGEventTapCreate(kCGSessionEventTap,kCGHeadInsertEventTap,kCGEventTapOptionListenOnly,kCGEventMaskForAllEvents,myCGEventCallback,NULL);
+    self.eventTap=CGEventTapCreate(kCGSessionEventTap,kCGHeadInsertEventTap,kCGEventTapOptionListenOnly,kCGEventMaskForAllEvents,myCGEventCallback,(__bridge void *)(self));
     NSLog(@"%@",self.eventTap);
     CGEventTapEnable(self.eventTap,true);
     NSLog(@"setup completed");
 }
 
-CGEventRef myCGEventCallback(CGEventTapProxy proxy,CGEventType type,CGEventRef event,void *refcon){
-    NSLog(@"%@",NSStringFromPoint([NSEvent mouseLocation]));
+CGEventRef myCGEventCallback(CGEventTapProxy proxy,CGEventType type,CGEventRef event,AppDelegate*this){
+    [this debugOutput:NSStringFromPoint([NSEvent mouseLocation])];
     return event;
 }
 
