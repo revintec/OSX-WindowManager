@@ -22,9 +22,8 @@
     [self.output setStringValue:self.string];
 }
 -(BOOL)requestAccessibility{
-    NSDictionary *options = @{(__bridge id)kAXTrustedCheckOptionPrompt: @YES};
-    BOOL accessibilityEnabled = AXIsProcessTrustedWithOptions((__bridge CFDictionaryRef)options);
-    return accessibilityEnabled;
+    NSDictionary*opt=@{(__bridge id)kAXTrustedCheckOptionPrompt:@true};
+    return AXIsProcessTrustedWithOptions((__bridge CFDictionaryRef)opt);
 }
 
 -(void)applicationDidFinishLaunching:(NSNotification *)notification{
