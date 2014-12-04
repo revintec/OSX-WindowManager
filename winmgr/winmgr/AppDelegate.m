@@ -13,6 +13,7 @@
 @property NSTextField*output;
 @property NSString*string;
 @property(weak)IBOutlet NSWindow * window;
+@property NSStatusItem*item;
 @end
 
 @implementation AppDelegate
@@ -27,6 +28,22 @@
 }
 
 -(void)applicationDidFinishLaunching:(NSNotification *)notification{
+    
+    NSStatusBar*bar=[NSStatusBar systemStatusBar];
+    self.item=[bar statusItemWithLength:NSVariableStatusItemLength];
+    [self.item setTitle:@"aabb"];
+    
+//    const char *hostName = [@"stackoverflow.com"
+//                            cStringUsingEncoding:NSASCIIStringEncoding];
+//    SCNetworkConnectionFlags flags = 0;
+//    if (SCNetworkCheckReachabilityByName(hostName, &flags) && flags > 0) {
+//        NSLog(@"Host is reachable: %d", flags);
+//    }
+//    else {
+//        NSLog(@"Host is unreachable");
+//    }
+    
+    
     NSView *contentView = [self.window contentView];
     self.output=[contentView viewWithTag:100];
     self.string=@"";
